@@ -1,0 +1,107 @@
+{
+   "step-1": {
+      "title": "Personal Info",
+      "description": "Please provide your personal information to get started.",
+      "fields": {
+         "name": {
+            "type": "input",
+            "attr": {
+               "type": "text",
+               "id": "name",
+               "placeholder": "Enter your name"
+            },
+            "label": "Name",
+            "required": true
+         },
+         "email": {
+            "type": "input",
+            "attr": {
+               "type": "email",
+               "id": "email",
+               "placeholder": "Enter your email"
+            },
+            "label": "Email Address",
+            "required": true
+         },
+         "phone": {
+            "type": "input",
+            "attr": {
+               "type": "tel",
+               "id": "phone",
+               "placeholder": "Enter your phone number"
+            },
+            "label": "Phone Number",
+            "required": false
+         }
+      }
+   },
+   "step-2": {
+      "title": "Select Plan",
+      "description": "You Have The Option Of The Monthly And Yearly Billing.",
+      "discont": {
+         "yearly": "2 Months Free",
+         "monthly": ""
+      },
+      "fields": {
+         "plan": {
+            "type": "div",
+            "attr": {
+               "class": "plan-options"
+            },
+            "options": [
+               { 
+               "title": "Arcade",
+               "icon": "../assets/images/icon-arcade.svg",
+               "price": {"yearly": "$90/yr", "monthly": "$9/mo"} },
+               {
+               "title": "Advanced",
+               "icon": "../assets/images/icon-advanced.svg",
+               "price": 
+                  {"yearly": "$120/yr",
+                  "monthly": "$12/mo"
+                  }
+               },
+               {
+               "title": "Pro",
+               "icon": "../assets/images/icon-pro.svg",
+               "price": 
+                  {"yearly": "$150/yr",
+                  "monthly": "$15/mo"
+                  }
+               }
+            ]
+         },
+         "billing": {
+            "type": "input",
+            "attr": {
+               "type": "radio",
+               "value": "billing-frequency"
+            },
+            "options": [
+               { "title": "Yearly", "value": "yearly" },
+               { "title": "Monthly", "value": "monthly" }
+            ],
+            "default": "yearly",
+            "required": true
+         }
+      }
+   },
+   "step-3": {
+      "title": "Pick Add-ons",
+      "description": "Add-ons help enhance your gaming experience.",
+      "fields": {
+         "add-ons": {
+            "type": "checkbox",
+            "options": [
+               { "title": "Online Service","description": "Access To Multiplayers Games", "price": {"yearly": "$10/yr", "monthly": "$1/mo"} },
+               { "title": "Larger Storage","description": "Extra 1TB Of Cloud Save", "price": {"yearly": "$20/yr", "monthly": "$2/mo"} },
+               { "title": "Customizable Profile","description": "Custom Theme On Your Profile", "price": {"yearly": "$15/yr", "monthly": "$1.5/mo"} }
+            ]
+         }
+      }
+   },
+   "step-4": {
+      "title": "Finishing up",
+      "description": "Double-check everything looks ok before confirming."
+   }
+}

@@ -1,0 +1,21 @@
+doctype html
+- let steps = ["Your Info", "Select Plan", "Add-ons", "Summary"]; 
+html
+   head
+      title Multi Step Form
+      meta(charset='UTF-8')
+      meta(name='viewport', content='width=device-width, initial-scale=1.0')
+      meta(name='description', content='Multi Step Form')
+      meta(name='keywords', content='HTML, CSS, JavaScript, Multi Step Form, Form')
+      meta(name='author', content='Omar')
+      link(rel='icon', href='favicon.ico')
+      link(rel='stylesheet', href='dist/style.min.css')            
+   body
+      .container
+         ul.sidebar#sidebar
+            each step, index in steps
+               li(class=index === 0 ? 'active' : '', id=`step-${index + 1}`, data-step=index + 1)
+                  p Step #{index + 1}
+                  div #{step}
+         form#form.step-1
+      script(src='dist/main.js', defer)
