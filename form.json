@@ -51,11 +51,11 @@
             "options": [
                { 
                "title": "Arcade",
-               "icon": "../assets/images/icon-arcade.svg",
+               "icon": "assets/images/icon-arcade.svg",
                "price": {"yearly": "$90/yr", "monthly": "$9/mo"} },
                {
                "title": "Advanced",
-               "icon": "../assets/images/icon-advanced.svg",
+               "icon": "assets/images/icon-advanced.svg",
                "price": 
                   {"yearly": "$120/yr",
                   "monthly": "$12/mo"
@@ -63,7 +63,7 @@
                },
                {
                "title": "Pro",
-               "icon": "../assets/images/icon-pro.svg",
+               "icon": "assets/images/icon-pro.svg",
                "price": 
                   {"yearly": "$150/yr",
                   "monthly": "$15/mo"
